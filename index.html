@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <title>formulář</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="bg-info p-5 ">
+        <h1 class="display-2 text-white text-center">Responzivní formulář v HTML</h1>
+    </header>
+    <main>
+        <h2 class="bg-primary text-light text-center p-2">Formulář studenta</h2>
+        <div class="container">
+            <form>
+                <div class="mb-3 row">
+                    <label for="jmeno" class="col-sm-3 col-form-label">Jméno studenta</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="jmeno" id="jmeno" placeholder="Jan">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="primeni" class="col-sm-3 col-form-label">Příjmení studenta</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="primeni" id="primeni" placeholder="Novák">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="narozeni" class="col-sm-3 col-form-label">Datum narození</label>
+                    <div class="col-sm-9">
+                        <input type="date" class="form-control" name="narozeni" id="narozeni">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="email" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" name="email" id="email"
+                            placeholder="jmeno.prijmeni@seznam.cz">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="barva" class="col-sm-3 col-form-label">Preferovaná barva</label>
+                    <div class="col-sm-9">
+                        <input type="color" class="form-control" name="barva" id="barva" placeholder="Jan">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="heslo" class="col-sm-3 col-form-label">Heslo</label>
+                    <div class="col-sm-9">
+                        <input type="Password" class="form-control" name="heslo" id="heslo" placeholder="Zadej heslo">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="absence" class="col-sm-3 col-form-label">Absence</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" name="absence" id="absence"
+                            placeholder="Zadej Absenci" value="0" min="0" max="1200">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="pohlaví" class="col-sm-3 col-form-label">Pohlaví</label>
+                    <div class="col-sm-9">
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="pohlavi" id="muz" value="Muž"
+                                    checked> Muž
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="pohlavi" id="zena" value="Žena"> Žena
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="prohlizec" class="col-sm-3 col-form-label">Prohlížeč</label>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="chrome" id="chrome" value="Google chrome" checked>
+                            <label class="form-check-label" for="">Google chrome
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="firefox" id="firefox" value="Mozilla firefox">
+                            <label class="form-check-label" for="">Mozilla firefox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="opera" id="opera" value="Opera" >
+                            <label class="form-check-label" for="">Opera
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="obor" class="col-sm-3 col-form-label">Studijní obor</label>
+                    <div class="col-sm-9">
+                        <div class="mb-3">
+                        <select class="form-control" name="obor" id="obor">
+                            <option value="IT">Informační technologie</option>
+                            <option value="SV" selected>Strojírenství</option>
+                            <option value="UO">Umělecké obory</option>
+                        </select>
+                        </div> 
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="poznamka" class="col-sm-3 col-form-label">Poznámka</label>
+                    <div class="col-sm-9">
+                        <div class="mb-3">
+                        <textarea class="form-control" name="poznamka" id="poznamka" rows="6">Tady bude poznámka</textarea>
+                        </div> 
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Action</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
